@@ -1,0 +1,14 @@
+/* Minimal, required reset only — no design or styling changes.
+   Without this, the browser's default body margin would introduce
+   an unwanted gap around the app that the Claude artifact wrapper
+   currently hides automatically. */
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+#root {
+  min-height: 100vh;
+}
